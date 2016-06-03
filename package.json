@@ -2,7 +2,7 @@
   "name": "john-whittenburg",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
     "serve": "./node_modules/.bin/ember serve -lrp 35729",
     "test": "./node_modules/.bin/ember test -s",
