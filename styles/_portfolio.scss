@@ -1,11 +1,33 @@
-.project-item {
+.portfolio {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  max-width: 100%;
+
+  &__list-item {
+    display: flex;
+    flex-basis: 20rem;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+
+    margin: $spacing;
+  }
+
+  &__text-wrapper {
+    align-self: flex-start;
+    height: 12rem;
+  }
+}
+
+.project-item {
+  height: 17rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
 
   &__container {
-
-    flex-basis: 20;
-    overflow: hidden;
 
     &__image {
       width: 100%;
