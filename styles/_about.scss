@@ -1,0 +1,17 @@
+.avatar-container {
+  display: flex;
+
+  width: 75%;
+
+  margin-bottom: 4rem;
+  margin-left: 12.5%;
+
+  &__image {
+    align-self: center;
+
+    width: 100%;
+
+    border: 0.1rem solid $brand-rgb;
+    border-radius: 1rem;
+  }
+}
