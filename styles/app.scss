@@ -10,3 +10,13 @@
 @import 'portfolio';
 @import 'contact';
 @import 'header';
+
+@media (max-width: 480px) {
+  .logo-first {
+    display: none;
+  }
+
+  .logo-last {
+    margin-left: 0;
+  }
+}
