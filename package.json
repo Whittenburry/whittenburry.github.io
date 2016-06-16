@@ -9,7 +9,7 @@
     "build": "./node_modules/.bin/ember build",
     "lint": "./node_modules/.bin/sass-lint",
     "esfix": "./node_modules/.bin/eslint src --fix && ./node_modules/.bin/eslint tests --fix",
-    "deploy": "ember build && surge dist jawhittenburg.surge.sh"
+    "deploy": "ember build -e production && surge dist jawhittenburg.surge.sh"
   },
   "author": "",
   "license": "ISC",
