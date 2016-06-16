@@ -1,7 +1,7 @@
 var readyState = function(callback)
 {
     var body = document.body;
-    
+
     if(body && body.readyState == 'loaded')
     {
         callback();
@@ -16,7 +16,7 @@ var readyState = function(callback)
         {
             window.attachEvent('onload', callback);
         }
-    }   
+    }
 }
 
 readyState(function()
@@ -43,13 +43,6 @@ readyState(function()
         crossroads.parse(newHash);
     }
 
-    /**
-     * Position of the intro text
-     */
-    function introPos()
-    {
-        $('#intro').css({'margin-top':( ($('.box:first').height() /2) - $('#header').height() - ($('#intro').height() /2) )});
-    }
 
     /**
      * Set Hash silently
@@ -72,17 +65,15 @@ readyState(function()
     {
             scrollPage(page);
     });
-    
+
     /**
      * Hasher
      */
     hasher.initialized.add(parseHash);
     hasher.changed.add(parseHash);
     hasher.init();
-    
-    introPos();
 
-    $('#intro').fadeIn();
+    // $('#intro').fadeIn();
 
     /**
      * Window scroll
@@ -90,7 +81,7 @@ readyState(function()
     $(window).scroll(function()
     {
         var self = this;
-        
+
         if(scroll)
         {
             $('.box').each(function()
@@ -118,28 +109,20 @@ readyState(function()
     });
 
     /**
-     * Window resize
-     */
-    $(window).resize(function()
-    {
-        introPos();
-    });
-
-    /**
      * Scroll to top links
-     */    
+     */
     $('#back-top').click(function(event)
     {
         $('#navigation a[data-nav="scroll"]').removeClass('active');
 
         var firstItem = $('#navigation a[data-nav="scroll"]:first');
-        
+
         firstItem.addClass('active');
 
         hasher.setHash(firstItem.attr('href').replace('#/', ''));
 
         $('html, body').animate({ scrollTop: 0 }, 800);
-        
+
         return false;
     });
 
@@ -154,7 +137,7 @@ readyState(function()
         hasher.setHash(firstItem.attr('href').replace('#/', ''));
 
         $('html, body').animate({ scrollTop: 0 }, 800);
-        
+
         return false;
     });
 
@@ -189,7 +172,7 @@ readyState(function()
     $('.lightbox_trigger').click(function(event)
     {
         event.preventDefault();
-        
+
         $('#bigimg').attr({'src':$(this).attr("href")});
         $('#lightbox').show();
     });
