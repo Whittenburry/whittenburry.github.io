@@ -1,0 +1,19 @@
+#intro {
+  animation-delay: 0.4s;
+  animation: pulse 1.8s;
+  position: absolute;
+  top: calc(50vh - 6rem);
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

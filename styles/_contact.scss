@@ -31,36 +31,14 @@
   }
 }
 
-.email {
+.contact-text {
+  font-family: 'Sanchez', serif;
 
-  &__text {
-    color: $brand-primary;
-    font-family: 'Sanchez', serif;
-
-    &:hover {
-      color: $brand-white;
-    }
+  &:hover {
+    color: lighten($brand-primary, 17%);
   }
 }
 
-.mobile {
-  &__text {
-    color: $brand-primary;
-    font-family: 'Sanchez', serif;
-
-    &:hover {
-      color: $brand-white;
-    }
-  }
-}
-
-.linked-in {
-  &__text {
-    color: $brand-primary;
-    font-family: 'Sanchez', serif;
-
-    &:hover {
-      color: $brand-white;
-    }
-  }
-}
+.my-email { display: none; }
+// .contact__card:hover .email-text { display: none; }
+// .contact__card:hover .my-email { display: block; }
