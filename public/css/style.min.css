@@ -83,6 +83,7 @@ ul
 
 #header .navbar
 {
+    display: none;
     margin-bottom: 10px;
     /*background: none;*/
     background-color: rgba(0, 0, 0, 0.6)
