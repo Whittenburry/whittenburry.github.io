@@ -16,6 +16,7 @@
   "dependencies": {
     "font-awesome": "^4.5.0",
     "normalize-css": "^2.3.1",
+    "npm": "^5.4.1",
     "yoga-sass": "^1.0.1"
   },
   "devDependencies": {
