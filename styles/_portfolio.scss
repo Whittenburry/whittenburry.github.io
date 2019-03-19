@@ -1,6 +1,6 @@
 .portfolio {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
 
   max-width: 100%;
@@ -19,7 +19,10 @@
   &__text-wrapper {
     align-self: flex-start;
     height: 12rem;
+    overflow: scroll;
+    ::-webkit-scrollbar { width: 0 !important }
   }
+
 }
 
 .project-item {
